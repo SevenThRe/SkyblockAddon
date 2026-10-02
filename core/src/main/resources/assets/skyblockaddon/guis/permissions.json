@@ -1,6 +1,6 @@
 {
   "title": [
-    "{\"text\": \"%group_name% - Permissions\"}"
+    "{\"text\": \"%group_name% - 权限\"}"
   ],
   "rows": 3,
   "key": "permissions",
@@ -22,7 +22,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Admin Controls\", \"color\":\"dark_red\", \"bold\":\"true\"}"
+          "{\"text\": \"管理控制\", \"color\":\"dark_red\", \"bold\":\"true\"}"
         ],
         "item": "minecraft:COMMAND_BLOCK",
         "lore": [
@@ -51,7 +51,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"General\", \"color\":\"blue\", \"bold\":\"true\"}"
+          "{\"text\": \"基础\", \"color\":\"blue\", \"bold\":\"true\"}"
         ],
         "item": "minecraft:GRASS_BLOCK",
         "lore": [
@@ -77,7 +77,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Redstone\", \"color\":\"red\", \"bold\":\"true\"}"
+          "{\"text\": \"红石\", \"color\":\"red\", \"bold\":\"true\"}"
         ],
         "item": "minecraft:REDSTONE",
         "lore": [
@@ -103,7 +103,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Storage\", \"color\":\"aqua\", \"bold\":\"true\"}"
+          "{\"text\": \"存储\", \"color\":\"aqua\", \"bold\":\"true\"}"
         ],
         "item": "minecraft:CHEST",
         "lore": [
@@ -129,7 +129,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Create\", \"color\":\"gold\", \"bold\":\"true\"}"
+          "{\"text\": \"机械动力\", \"color\":\"gold\", \"bold\":\"true\"}"
         ],
         "item": "minecraft:PISTON",
         "lore": [
@@ -155,7 +155,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Miscellaneous\", \"color\":\"green\", \"bold\":\"true\"}"
+          "{\"text\": \"杂项\", \"color\":\"green\", \"bold\":\"true\"}"
         ],
         "item": "minecraft:COMPASS",
         "lore": [
@@ -181,7 +181,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Vault Hunters\", \"color\":\"yellow\", \"bold\":\"true\"}"
+          "{\"text\": \"宝库猎人\", \"color\":\"yellow\", \"bold\":\"true\"}"
         ],
         "item": "the_vault:vault_crystal",
         "lore": [
@@ -207,7 +207,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Remove group\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"删除分组\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:BARRIER",
         "lore": [],
@@ -221,7 +221,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Members\",\"bold\": true,\"color\": \"blue\"}"
+          "{\"text\": \"成员\",\"bold\": true,\"color\": \"blue\"}"
         ],
         "item": "minecraft:OAK_BOAT",
         "lore": [],
@@ -238,7 +238,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Back\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"返回\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:ARROW",
         "lore": [],

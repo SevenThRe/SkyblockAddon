@@ -1,6 +1,6 @@
 {
   "title": [
-    "{\"text\": \"%group_name% - Members\"}"
+    "{\"text\": \"%group_name% - 成员\"}"
   ],
   "rows": 4,
   "key": "members_group",
@@ -23,7 +23,7 @@
         "lore": [
           [
             {
-              "text": "» Click to change the group this member is a part of.",
+              "text": "» 点击更改该成员所属的分组。",
               "color": "dark_gray"
             }
           ],
@@ -35,7 +35,7 @@
           ],
           [
             {
-              "text": "♦ Part of: ",
+              "text": "♦ 所属分组：",
               "color": "dark_gray"
             },
             {
@@ -64,7 +64,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Back\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"返回\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:ARROW",
         "lore": [],
@@ -93,7 +93,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Previous\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"上一页\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:RED_BANNER",
         "lore": [],
@@ -107,7 +107,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Next\",\"bold\": true,\"color\": \"green\"}"
+          "{\"text\": \"下一页\",\"bold\": true,\"color\": \"green\"}"
         ],
         "item": "minecraft:GREEN_BANNER",
         "lore": [],
@@ -121,7 +121,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Add member\",\"bold\": true,\"color\": \"green\"}"
+          "{\"text\": \"添加成员\",\"bold\": true,\"color\": \"green\"}"
         ],
         "item": "minecraft:OAK_BOAT",
         "lore": [],

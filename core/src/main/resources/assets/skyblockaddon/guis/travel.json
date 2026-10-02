@@ -1,6 +1,6 @@
 {
   "title": [
-    "{\"text\": \"%server_name% - Travel Map\"}"
+    "{\"text\": \"%server_name% - 旅行地图\"}"
   ],
   "rows": 5,
   "key": "travel",
@@ -20,13 +20,13 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"%data_owner_name%'s Island\", \"color\":\"blue\"}"
+          "{\"text\": \"%data_owner_name% 的岛屿\", \"color\":\"blue\"}"
         ],
         "item": "minecraft:PLAYER_HEAD",
         "lore": [
           [
             {
-              "text": "» Click to travel to this island.",
+              "text": "» 点击前往这座岛屿。",
               "color": "dark_gray"
             }
           ]
@@ -56,7 +56,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Previous\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"上一页\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:RED_BANNER",
         "lore": [],
@@ -70,7 +70,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Next\",\"bold\": true,\"color\": \"green\"}"
+          "{\"text\": \"下一页\",\"bold\": true,\"color\": \"green\"}"
         ],
         "item": "minecraft:GREEN_BANNER",
         "lore": [],

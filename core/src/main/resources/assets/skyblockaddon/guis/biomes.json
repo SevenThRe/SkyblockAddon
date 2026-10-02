@@ -1,6 +1,6 @@
 {
   "title": [
-    "{\"text\": \"%owner%'s Island\"}"
+    "{\"text\": \"%owner% 的岛屿\"}"
   ],
   "rows": 5,
   "key": "biomes",
@@ -24,13 +24,13 @@
         "lore": [
           [
             {
-              "text": "» Click to change the biome of your island.",
+              "text": "» 点击更换你岛屿的生物群系。",
               "color": "dark_gray"
             }
           ],
           [
             {
-              "text": "♦ Current: ",
+              "text": "♦ 当前：",
               "color": "dark_gray"
             },
             {
@@ -54,7 +54,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Back\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"返回\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:ARROW",
         "lore": [],
@@ -83,7 +83,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Previous\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"上一页\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:RED_BANNER",
         "lore": [],
@@ -97,7 +97,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Next\",\"bold\": true,\"color\": \"green\"}"
+          "{\"text\": \"下一页\",\"bold\": true,\"color\": \"green\"}"
         ],
         "item": "minecraft:GREEN_BANNER",
         "lore": [],

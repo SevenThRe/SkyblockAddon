@@ -34,7 +34,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Back\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"返回\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:ARROW",
         "lore": [],
@@ -63,7 +63,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Previous\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"上一页\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:RED_BANNER",
         "lore": [],
@@ -77,7 +77,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Next\",\"bold\": true,\"color\": \"green\"}"
+          "{\"text\": \"下一页\",\"bold\": true,\"color\": \"green\"}"
         ],
         "item": "minecraft:GREEN_BANNER",
         "lore": [],

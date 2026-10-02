@@ -1,6 +1,6 @@
 {
   "title": [
-    "{\"text\": \"%owner%'s Island\"}"
+    "{\"text\": \"%owner% 的岛屿\"}"
   ],
   "rows": 3,
   "key": "set_group",
@@ -32,7 +32,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Back\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"返回\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:ARROW",
         "lore": [],
@@ -61,7 +61,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Previous\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"上一页\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:RED_BANNER",
         "lore": [],
@@ -75,7 +75,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Next\",\"bold\": true,\"color\": \"green\"}"
+          "{\"text\": \"下一页\",\"bold\": true,\"color\": \"green\"}"
         ],
         "item": "minecraft:GREEN_BANNER",
         "lore": [],
@@ -89,7 +89,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Kick member\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"踢出成员\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:BARRIER",
         "lore": [],

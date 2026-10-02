@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "package": "yorickbm.skyblockaddon.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "server": [
+    "TerralithRegionWeightMixin"
+  ],
+  "refmap": "skyblockaddon.refmap.json"
+}

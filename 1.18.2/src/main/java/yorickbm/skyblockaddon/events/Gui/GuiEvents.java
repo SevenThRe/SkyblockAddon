@@ -23,6 +23,20 @@ import java.util.stream.Collectors;
 public class GuiEvents {
     private static final Logger LOGGER = LogManager.getLogger();
 
+    /**
+     * CN fork: category_id -> Chinese display name for {@code %group_category%}.
+     * Kept in sync with the category buttons in {@code assets/skyblockaddon/guis/permissions.json}.
+     */
+    private static final Map<String, String> CATEGORY_NAMES = Map.of(
+            "admin", "管理控制",
+            "general", "基础",
+            "redstone", "红石",
+            "storage", "存储",
+            "create", "机械动力",
+            "miscellaneous", "杂项",
+            "vaulthunters", "宝库猎人"
+    );
+
     @SubscribeEvent
     public void itemRenderer(final GuiDrawItemEvent event) {
         if(event.isCanceled()) return; //Skip if canceled
@@ -141,8 +155,19 @@ public class GuiEvents {
             replacements.put("%group_member_count%", group.getMembers().size() + "");
 
             if (data.getCompound(GUILibraryRegistry.MOD_ID).contains("category_id")) {
-                final String category = data.getCompound(GUILibraryRegistry.MOD_ID).getString("category_id").replace("_", " ");
-                replacements.put("%group_category%", Character.toUpperCase(category.charAt(0)) + category.substring(1));
+                final String categoryId = data.getCompound(GUILibraryRegistry.MOD_ID).getString("category_id");
+                // CN fork: the category used to render as the raw id with its first letter
+                // upper-cased ("admin" -> "Admin"), so it stayed English even in an otherwise
+                // fully localized GUI. Resolve it through the same Chinese names the
+                // permissions.json buttons use; unknown ids keep the original behaviour so new
+                // upstream categories still render.
+                final String localized = CATEGORY_NAMES.get(categoryId);
+                if (localized != null) {
+                    replacements.put("%group_category%", localized);
+                } else {
+                    final String fallback = categoryId.replace("_", " ");
+                    replacements.put("%group_category%", Character.toUpperCase(fallback.charAt(0)) + fallback.substring(1));
+                }
             }
         }
 

@@ -18,6 +18,9 @@ public class SkyblockAddonConfig {
         register("island.particles.border", "TRUE", "Enable/Disable the particle border that is generated at island buildable edge.");
         register("island.create.cooldown", "5", "Cooldown before /island create may be executed again. (0 for no cooldown).");
 
+        //CN fork：主城（悬浮宝库祭坛）高度。刻意与 island.spawn.height 错开，
+        //这样主城与玩家空岛在视觉与坐标上都不会被误认成同一个地方。
+        register("hub.spawn.height", "128", "[CN] 主城「悬浮宝库祭坛」的地面高度。刻意与 island.spawn.height 不同，避免与玩家空岛混淆。");
 
         register("permissions.debug", "FALSE", "Print debug messages on island permission events into console. This helps verifying and adding new permissions into your configuration.");
 

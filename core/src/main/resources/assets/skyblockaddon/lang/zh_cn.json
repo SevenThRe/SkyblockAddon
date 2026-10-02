@@ -1,0 +1,82 @@
+{
+  "commands.not.in.overworld": "你只能在主世界中执行此命令。",
+  "commands.other.not.in.overworld": "你允许传送的玩家当前不在主世界中。",
+  "commands.has.no.island": "你还没有岛屿，无法执行此命令。使用「/island create」创建一座。",
+
+  "commands.admin.no.island": "此命令需要你站在某座岛屿上才能使用。",
+  "commands.admin.island.not.found.uuid": "找不到 UUID 为「%s」的岛屿。",
+  "commands.admin.island.not.found.player": "找不到「%s」的岛屿。",
+  "commands.admin.island.found.id": "已找到岛屿「%s」的 ID，点击即可复制。",
+  "commands.admin.island.has.island": "%s 已经属于某座岛屿了。",
+  "commands.admin.island.member.part": "%s 已经是这座岛屿的成员了。",
+  "commands.admin.island.member.added": "已把 %s 加入 %s 的岛屿。",
+  "commands.admin.island.member.failure": "无法把 %s 加入 %s 的岛屿。",
+  "commands.admin.skull.set": "已为 %s 的岛屿应用自定义头颅材质。",
+
+  "commands.admin.island.file.not.found": "未找到 UUID 为 %s 的岛屿文件",
+  "commands.admin.island.loaded": "岛屿 %s 已成功载入内存。",
+
+  "commands.teleporting.own": "正在将你传送回自己的岛屿……",
+  "commands.teleporting.other": "正在将你传送到 %s 的岛屿……",
+  "commands.teleporting.requested": "已请求传送到 %s 的岛屿……",
+  "commands.teleporting.request": "点击接受来自 %s 的传送请求，返回你的岛屿。",
+  "commands.teleporting.accepted": "正在将 %s 传送到你的岛屿……",
+
+  "commands.leave": "你已离开自己的岛屿，点击此处可撤销此操作。",
+  "commands.leave.failure": "无法将你从岛屿中移除，请稍后再试。",
+  "commands.leave.undo": "已把你重新加回岛屿，成员身份已恢复。",
+  "commands.leave.undo.failure": "无法将你加入岛屿「%s」，请联系服务器管理员并提供此 ID。",
+
+  "commands.invite.self": "你不能邀请自己，抱歉。",
+  "commands.invite.success": "你已邀请 %s 加入你的岛屿。",
+  "commands.invite.invited": "%s 邀请你加入他的岛屿。",
+  "commands.invite.accepted": "%s 已加入你的岛屿。",
+  "commands.invite.teleporting": "正在将你传送到自己的岛屿。",
+  "commands.invite.failure": "%s 无法加入 %s 的岛屿，请稍后再试。",
+  "commands.invite.has.island": "%s 已经属于某座岛屿，他必须先离开才能被你邀请。",
+
+  "commands.request.self": "你不能请求传送到自己的岛屿，抱歉。",
+  "commands.request.other": "正在将你传送到 %s 的岛屿……",
+  "commands.request.requested": "已请求 %s 传送到你的岛屿。",
+  "commands.request.request": "点击接受 %s 的请求，传送到他的岛屿。",
+  "commands.request.accepted": "%s 正在传送到你的岛屿。",
+
+  "commands.create.already": "你已经属于某座岛屿了。请先用「/island leave」离开当前岛屿，再创建新的。",
+  "commands.create.failure": "生成你的岛屿时出错，请稍后再试。",
+  "commands.create.success": "正在将你传送到新生成的岛屿……",
+  "commands.create.generating": "正在生成你的岛屿，这可能需要一点时间。",
+  "commands.create.cooldown": "抱歉，你需要在 %s 之后才能再次执行此命令。",
+
+  "commands.group.create": "点击此处创建分组，分组将使用你手持的物品及其名称。",
+  "commands.group.created": "已创建分组「%s」，使用物品「%s」。",
+  "commands.group.failure": "无法用手持物品创建分组，请换一个物品再试。",
+  "commands.group.not.found": "抱歉，找不到 ID 为「%s」的分组。",
+  "commands.group.added.member": "已把 %s 加入分组 %s。",
+  "commands.group.click.to.add": "点击此处获取把他人加入该分组的命令。",
+  "commands.group.name.exists": "此岛屿上已存在名为「%s」的分组。",
+
+  "island.group.remove.failed": "无法移除分组「%s」，请稍后再试。",
+  "island.group.remove.success": "分组「%s」已被移除，所有成员已移回默认分组。",
+
+  "commands.expired": "你正在尝试的操作已失效。",
+
+  "menu.not.found": "找不到你想打开的菜单 %s。",
+  "gui.group.default.name": "成员",
+  "gui.group.nonmember.name": "访客",
+  "toolbar.overlay.nothere": "你不能在这里这么做。",
+
+  "island.biome": "你的岛屿生物群系已变更为 %s。",
+  "island.travel": "正在穿越虚空与时间，带你前往……",
+  "island.private": "关闭",
+  "island.public": "开放",
+  "island.permission.enabled": "已启用",
+  "island.permission.disabled": "已禁用",
+  "island.member.group.set": "已把 %s 加入分组「%s」。",
+  "island.member.kicked": "%s 已被移出该分组／岛屿。",
+  "island.setspawn.outside": "你不能把出生点设置在岛屿边界之外。",
+
+  "commands.admin.purge.ask": "点击此处确认清除 %s 座岛屿，此操作将占用服务器大量资源。",
+  "commands.admin.purge.done": "已清除 %s 座岛屿！其占用的位置已释放，可供重新使用。",
+  "commands.admin.purge.notallowed": "这座岛屿未被废弃，不能清除。",
+  "commands.admin.purge.zero": "没有找到可清除的岛屿。"
+}

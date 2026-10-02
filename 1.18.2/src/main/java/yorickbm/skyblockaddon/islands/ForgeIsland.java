@@ -131,8 +131,15 @@ public class ForgeIsland extends Island implements NBTSerializable {
 
         final net.minecraft.server.MinecraftServer server = source.getServer();
         if (server == null) return;
-        final ServerLevel overworld = server.getLevel(Level.OVERWORLD);
-        final BlockPos worldSpawn = overworld != null ? overworld.getSharedSpawnPos() : BlockPos.ZERO;
+        // CN fork: the kicked player no longer has an island, so the hub is the correct
+        // destination — but the hub is now a generated altar rather than the world spawn, so it
+        // goes through HubManager (which builds the altar on first use) instead of
+        // getSharedSpawnPos(). Falling back to the level spawn only if that fails.
+        final BlockPos hub = yorickbm.skyblockaddon.islands.HubManager.fallbackSpawn();
+        final BlockPos worldSpawn = hub != null ? hub
+                : (server.getLevel(Level.OVERWORLD) != null
+                    ? server.getLevel(Level.OVERWORLD).getSharedSpawnPos()
+                    : BlockPos.ZERO);
         final ServerPlayer player = server.getPlayerList().getPlayer(entity);
         if(player != null
                 && player.getLevel().dimension() == Level.OVERWORLD

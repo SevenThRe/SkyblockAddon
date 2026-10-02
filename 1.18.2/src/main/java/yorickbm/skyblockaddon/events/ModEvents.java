@@ -3,6 +3,7 @@ package yorickbm.skyblockaddon.events;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
@@ -18,8 +19,10 @@ import yorickbm.skyblockaddon.capabilities.SkyblockAddonWorldProvider;
 import yorickbm.skyblockaddon.commands.*;
 import yorickbm.skyblockaddon.commands.op.*;
 import yorickbm.skyblockaddon.core.SkyblockAddonCore;
+import yorickbm.skyblockaddon.core.islands.Island;
 import yorickbm.skyblockaddon.core.islands.IslandManager;
 import yorickbm.skyblockaddon.core.util.UsernameCache;
+import yorickbm.skyblockaddon.islands.ForgeIsland;
 
 public class ModEvents {
     private static final Logger LOGGER = LogManager.getLogger();
@@ -88,6 +91,30 @@ public class ModEvents {
         event.getPlayer().getLevel().getServer().getLevel(Level.OVERWORLD).getCapability(SkyblockAddonWorldProvider.SKYBLOCKADDON_WORLD_CAPABILITY).ifPresent(cap -> {
             //Load user island into cache
             IslandManager.getInstance().loadIslandIntoReverseCache(event.getPlayer().getUUID());
+
+            // CN fork: make the landing spot unambiguous.
+            //
+            // Vanilla drops a joining player at the level's spawn point, which is the hub. For a
+            // player who already owns an island that is wrong twice over: the hub is not theirs,
+            // and the hub is a large built altar that used to be a byte-identical copy of their
+            // own starting island — so the confusion the mod was supposed to prevent was in fact
+            // caused by this very line's absence.
+            //
+            // Players with an island are placed on their own island spawn; players without one
+            // are placed on the hub, which is generated on demand by HubManager.
+            // PlayerEvent#getPlayer is typed as Player; on a dedicated server it is always a
+            // ServerPlayer, but the cast is checked rather than assumed.
+            if (!(event.getPlayer() instanceof final ServerPlayer player)) return;
+            final Island island = IslandManager.getInstance().getIslandByEntityUUID(player.getUUID());
+            if (island instanceof ForgeIsland forgeIsland) {
+                forgeIsland.teleportTo(player);
+            } else {
+                final net.minecraft.core.BlockPos hub =
+                        yorickbm.skyblockaddon.islands.HubManager.fallbackSpawn();
+                if (hub != null) {
+                    player.teleportTo(hub.getX(), hub.getY(), hub.getZ());
+                }
+            }
         });
     }
 }

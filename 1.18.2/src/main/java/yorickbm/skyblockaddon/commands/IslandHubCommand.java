@@ -19,7 +19,19 @@ public class IslandHubCommand extends OverWorldCommandStack {
     public int execute(final CommandSourceStack command, final ServerPlayer executor) {
         if(super.execute(command, executor) == 0) return Command.SINGLE_SUCCESS;
 
-        executor.teleportTo(command.getLevel().getSharedSpawnPos().getX(), command.getLevel().getSharedSpawnPos().getY(), command.getLevel().getSharedSpawnPos().getZ());
+        // CN fork: the hub is now the generated Sky Vault Altar, not the world spawn that used to
+        // double as the player-island template. Going through HubManager means the altar is built
+        // on first use, and the player lands on the altar rather than on a copy of their own
+        // starting island.
+        final net.minecraft.core.BlockPos hub =
+                yorickbm.skyblockaddon.islands.HubManager.fallbackSpawn();
+        if (hub == null) {
+            final var spawn = command.getLevel().getSharedSpawnPos();
+            executor.teleportTo(spawn.getX(), spawn.getY(), spawn.getZ());
+            return Command.SINGLE_SUCCESS;
+        }
+
+        executor.teleportTo(hub.getX(), hub.getY(), hub.getZ());
 
         return Command.SINGLE_SUCCESS;
     }

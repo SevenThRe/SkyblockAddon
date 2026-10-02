@@ -1,6 +1,6 @@
 {
   "title": [
-    "{\"text\": \"%owner%'s Island\"}"
+    "{\"text\": \"%owner% 的岛屿\"}"
   ],
   "rows": 3,
   "key": "overview",
@@ -19,13 +19,13 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Teleport\",\"bold\": true,\"color\": \"blue\"}"
+          "{\"text\": \"传送\",\"bold\": true,\"color\": \"blue\"}"
         ],
         "item": "minecraft:ENDER_EYE",
         "lore": [
           [
             {
-              "text": "» Teleport to your islands spawn location.",
+              "text": "» 传送到你的岛屿出生点。",
               "color": "dark_gray"
             }
           ]
@@ -40,13 +40,13 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Members\",\"bold\": true,\"color\": \"blue\"}"
+          "{\"text\": \"成员\",\"bold\": true,\"color\": \"blue\"}"
         ],
         "item": "minecraft:CHEST",
         "lore": [
           [
             {
-              "text": "» Overview all islands members and invite others.",
+              "text": "» 查看岛屿的全部成员并邀请他人。",
               "color": "dark_gray"
             }
           ]
@@ -66,13 +66,13 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Members\",\"bold\": true,\"color\": \"blue\"}"
+          "{\"text\": \"成员\",\"bold\": true,\"color\": \"blue\"}"
         ],
         "item": "minecraft:CHEST",
         "lore": [
           [
             {
-              "text": "» Overview all islands members and invite others.",
+              "text": "» 查看岛屿的全部成员并邀请他人。",
               "color": "dark_gray"
             }
           ]
@@ -92,13 +92,13 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Settings\",\"bold\": true,\"color\": \"blue\"}"
+          "{\"text\": \"设置\",\"bold\": true,\"color\": \"blue\"}"
         ],
         "item": "minecraft:ANVIL",
         "lore": [
           [
             {
-              "text": "» Change the settings of your island.",
+              "text": "» 修改你的岛屿设置。",
               "color": "dark_gray"
             }
           ]
@@ -118,19 +118,19 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Leave\",\"bold\": true,\"color\": \"blue\"}"
+          "{\"text\": \"离开\",\"bold\": true,\"color\": \"blue\"}"
         ],
         "item": "minecraft:BARRIER",
         "lore": [
           [
             {
-              "text": "» Leave the island.\n",
+              "text": "» 离开这座岛屿。\n",
               "color": "dark_gray"
             }
           ],
           [
             {
-              "text": "♦ Beware, if you are the last member, the island will be removed!",
+              "text": "♦ 注意：如果你是最后一名成员，岛屿将被删除！",
               "italic": true,
               "color": "red"
             }
@@ -149,13 +149,13 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Close\",\"bold\": true,\"color\": \"blue\"}"
+          "{\"text\": \"关闭\",\"bold\": true,\"color\": \"blue\"}"
         ],
         "item": "minecraft:BARRIER",
         "lore": [
           [
             {
-              "text": "» Close admin menu.\n",
+              "text": "» 关闭管理菜单。\n",
               "color": "dark_gray"
             }
           ]

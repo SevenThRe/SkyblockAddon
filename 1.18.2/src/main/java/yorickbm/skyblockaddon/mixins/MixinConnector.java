@@ -18,5 +18,9 @@ public class MixinConnector implements IMixinConnector {
         Mixins.addConfiguration("/mixins/easy_villagers.mixin.json");
         Mixins.addConfiguration("/mixins/easy_piglins.mixin.json");
         Mixins.addConfiguration("/mixins/elevatorid.mixin.json");
+        // CN fork: restores the vanilla overworld region weight that Terralith zeroes out, so a
+        // sky vault level-type can generate terrain instead of bare void. Declared non-required
+        // with defaultRequire 0, so a pack without TerraBlender/Terralith simply skips it.
+        Mixins.addConfiguration("/mixins/terralith_region.mixin.json");
     }
 }

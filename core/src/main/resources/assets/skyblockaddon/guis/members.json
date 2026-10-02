@@ -1,6 +1,6 @@
 {
   "title": [
-    "{\"text\": \"%owner%'s Island\"}"
+    "{\"text\": \"%owner% 的岛屿\"}"
   ],
   "rows": 5,
   "key": "members",
@@ -24,7 +24,7 @@
         "lore": [
           [
             {
-              "text": "» Click to change the group this member is a part of.",
+              "text": "» 点击更改该成员所属的分组。",
               "color": "dark_gray"
             }
           ],
@@ -36,7 +36,7 @@
           ],
           [
             {
-              "text": "♦ Part of: ",
+              "text": "♦ 所属分组：",
               "color": "dark_gray"
             },
             {
@@ -65,7 +65,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Back\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"返回\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:ARROW",
         "lore": [],
@@ -94,7 +94,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Previous\",\"bold\": true,\"color\": \"red\"}"
+          "{\"text\": \"上一页\",\"bold\": true,\"color\": \"red\"}"
         ],
         "item": "minecraft:RED_BANNER",
         "lore": [],
@@ -108,7 +108,7 @@
     {
       "item": {
         "display_name": [
-          "{\"text\": \"Next\",\"bold\": true,\"color\": \"green\"}"
+          "{\"text\": \"下一页\",\"bold\": true,\"color\": \"green\"}"
         ],
         "item": "minecraft:GREEN_BANNER",
         "lore": [],
